@@ -2,6 +2,8 @@
 
 This project predicts real estate prices in Bengaluru based on key factors like square footage, number of bedrooms (BHK), bathrooms, and location. The model uses machine learning to estimate property prices, and the web application is built using Flask for the backend and a simple frontend for user interaction.
 
+![Screenshot](https://github.com/vishal-56/Real-Estate-Price-Prediction/raw/main/screencaste/Screenshot%20from%202024-09-16%2001-02-27.png)
+
 ## Dataset
 - **Source**: The dataset (`bengaluru_house_prices.csv`) contains property prices in Bengaluru.
 - **Features**: `location`, `total_sqft`, `bath`, `bhk`.
