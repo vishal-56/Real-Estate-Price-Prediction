@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Price Prediction</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Real Estate Price Prediction</h1>
+        <form id="price-form">
+            <div class="form-group">
+                <label for="total_sqft">Total Square Feet:</label>
+                <input type="number" id="total_sqft" name="total_sqft" required>
+            </div>
+            <div class="form-group">
+                <label for="bhk">BHK:</label>
+                <input type="number" id="bhk" name="bhk" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="bath">Number of Bathrooms:</label>
+                <input type="number" id="bath" name="bath" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <select id="location" name="location" required>
+                    <!-- Options will be populated dynamically -->
+                </select>
+            </div>
+            <button type="submit">Get Estimated Price</button>
+        </form>
+        <div id="result">
+            <!-- Result will be displayed here -->
+        </div>
+    </div>
+</body>
+
+</html>
